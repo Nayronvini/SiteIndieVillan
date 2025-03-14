@@ -380,3 +380,85 @@ a:hover {
 #youtube:hover {
     background-color: var(--youtube-color);
 }
+
+
+
+
+.site-footer {
+    background: var(--footer-bg-color);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+  
+.site-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
+.tooplate-link a {
+      color: var(--white-color);
+}
+  
+.footer-menu {
+    padding: 0;
+}
+  
+.footer-menu-item {
+    display: block;
+    list-style: none;
+}
+  
+.footer-menu-link,
+.footer-link {
+    display: inline-block;
+    color: rgba(255,255,255,0.8);
+    font-size: var(--copyright-text-font-size);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+.footer-menu-link:hover,
+.footer-link:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+  
+.site-footer .social-icon-link,
+.site-footer .copyright-text {
+    color: var(--white-color);
+    font-size: var(--copyright-text-font-size);
+}
+  
+.site-footer .social-icon {
+    text-align: right;
+}
+  
+.site-footer .copyright-text {
+    font-size: var(--copyright-text-font-size);
+}
+  
+  /*---------------------------------------
+    SOCIAL ICON               
+  -----------------------------------------*/
+.social-icon {
+    margin: 0;
+    padding: 0;
+}
+  
+.social-icon li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+  
+.social-icon-link {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 15px;
+}
+  
+.social-icon-link:hover {
+    color: var(--primary-color);
+}
