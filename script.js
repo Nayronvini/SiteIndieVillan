@@ -60,7 +60,7 @@ if (document.getElementById("login-form")) {
             document.getElementById("message").innerText =
                 "Login bem-sucedido! Redirecionando...";
             setTimeout(() => {
-                window.location.href = "dashboard.html";
+                window.location.href = "pages/mainPage.html";
             }, 2000);
         });
 }
