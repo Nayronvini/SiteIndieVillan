@@ -3,14 +3,18 @@
     --headline: #fffffe;
     --paragraph: #b8c1ec;
     --link: #d42dc8;
+    --link-variant: #67186c;
+
     --card-background: #16161a;
     --card-headline: #fffffe;
     --card-paragraph: #f8f8f9;
+
     --newsletter-background: #fffffe;
     --form-input: #16161a;
     --label-placeholder: #fffffe;
-    --form-button: #eebbc3;
-    --form-button-text: #232946;
+    --form-button: #22afc7;
+    --form-button-variant: #25c3db;
+    --form-button-text: #0e394e;
     --instagram-color: #c82ca4;
     --youtube-color: #ff0404;
 }
@@ -115,6 +119,55 @@ a:hover {
         grid-column: span 1;
     }
 }
+
+/* Botões */
+.btn-download,
+.btn-download * {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-download {
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--link-variant);
+  color: var(--paragraph);
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  padding: 0.8rem 3rem;
+  text-transform: uppercase;
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: background-color 1s ease;
+  z-index: 1;
+}
+
+.btn-download:hover {
+  background-color: var(--form-button);
+}
+
+.btn-download:before {
+  aspect-ratio: 1;
+  background: var(--form-button-text);
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+  z-index: -1;
+}
+
+.btn-download:hover:before {
+  width: 100%;
+}
+
 
 
 /* Cabeçalho */
