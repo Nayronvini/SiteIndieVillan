@@ -436,29 +436,17 @@ a:hover {
     font-size: var(--copyright-text-font-size);
 }
   
-  /*---------------------------------------
-    SOCIAL ICON               
-  -----------------------------------------*/
-.social-icon {
-    margin: 0;
-    padding: 0;
+.log {
+    align-items: center;
 }
-  
-.social-icon li {
-    list-style: none;
-    display: inline-block;
-    vertical-align: top;
-}
-  
-.social-icon-link {
-    font-size: 1rem;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-right: 15px;
-}
-  
-.social-icon-link:hover {
-    color: var(--primary-color);
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

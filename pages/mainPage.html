@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="_imagens/indievillan-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/indievillan_logo.png" type="image/x-icon">
     <title>IndieVillan - Home</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">
+                <a href="mainPage.html">
                     <img src="../assets/indievillan_logo.png" alt="Logo da IndieVillan">
                 </a>
             </div>
@@ -19,7 +19,7 @@
             <ul class="menu">
                 <li><a href="#index" class="nav-link">Início</a></li>
                 <li><a href="#sobre-nos" class="nav-link">Sobre Nós</a></li>
-                <li><a href="/pages/helva.html" class="nav-link">Helva</a></li>
+                <li><a href="helva.html" class="nav-link">Helva</a></li>
             </ul>
         </nav>
     </header>
@@ -30,17 +30,17 @@
             <div class="banner-container">
                 <div class="slides">
                     <div class="slide first banner">
-                        <img src="assets/indievillan_banner.png" alt="IndieVillan">
+                        <img src="../assets/indievillan_banner.png" alt="IndieVillan">
                     </div>
                     <div class="slide banner">
-                        <img src="assets/LogoHelva.jpg" alt="Helva">
+                        <img src="../assets/LogoHelva.jpg" alt="Helva">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- sobre nos -->
-         <section class="titulo">
+         <section class="titulo" id="sobre-nos">
              <h1 class="ms-2">Sobre nós</h1>
          </section>
         <section class="cards-container">
@@ -55,63 +55,36 @@
                 </p>
             </div>
             <div class="card card-img">
-                <img src="/assets/indievillan_logo.png">
+                <img src="../assets/indievillan_logo.png">
             </div>
         </section>
 
     </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5 col-12 me-auto mb-4">
-                    <h5 class="text-white mb-3">Nossos Jogos</h5>
-
-                    <ul class="footer-menu">
-                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Helva: EoLP</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-5 col-12 me-auto mb-4">
-                    <h5 class="text-white mb-3">Diga Olá</h5>
-
-                    <p class="text-white mb-1">Paraíba, Brasil</p>
-
-                    <p><a href="mailto:indievillan@gmail.com" class="footer-link">indievillan@gmail.com</a><p>
-                </div>
-
-                <div class="site-footer-bottom mt-5">
-                    <div class="row pt-4">
-                        <div class="col-lg-6 col-12">
-                            <p class="copyright-text tooplate-link">Copyright © 2025 IndieVillan.
-                        </div>
-
-                        <div class="col-lg-3 col-12 ms-auto">
-                            <ul class="social-icon">
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
-
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-
-                                <li><a href="#" class="social-icon-link"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+    <footer>
+        <section class="creditos" >
+            <h1>Redes Sociais</h1>
+        </section>
+        <section class="links-sociais">
+            <div class="social" id="instagram">
+                <a href="https://www.instagram.com/indievillan" target="_blank">
+                    <img src="../assets/instagram_logo.png" alt="Instagram da Empresa">
+                </a>
             </div>
-        </div>
+            <div class="social" id="youtube">
+                <a href="https://www.youtube.com/@IndieVillan" target="_blank">
+                    <img src="../assets/youtube_logo.png" alt="Youtube da Empresa">
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="banner">
+                <img src="../assets/indievillan_banner.png" alt="Banner da Empresa">
+            </div>
+        </section>
     </footer>
     
     <!-- Scripts para o NAV -->
-    <script src="_scripts/jquery.min.js"></script>
-    <script src="_scripts/custom.js"></script>
-    <!-- Script do slide da página -->
-    <script src="_scripts/script-slide.js"></script>
-    <!-- Bootstrap básico -->
-    <script src="_scripts/bootstrap.min.js"></script>
-    <!-- Icones do site -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
