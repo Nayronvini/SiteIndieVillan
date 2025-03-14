@@ -3,75 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_styles/styleindex.css">
-    <link rel="stylesheet" href="_styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="_imagens/indievillan-logo.png" type="image/x-icon">
     <title>IndieVillan - Home</title>
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <div class="container">
-
-                <a href="index.html" class="navbar-brand">
-                    <img class="bi-layers" src="_imagens/indievillan_logo-fundo.png" width="70px"> IndieVillan
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/indievillan_logo.png" alt="Logo da IndieVillan">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#index">Inicío</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#sobre-nos">Sobre nós</a>
-                        </li>
-                    </ul>
-                    <div class="ms-auto d-none d-lg-block">
-                    </div>
-                </div>
             </div>
+            <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="#index" class="nav-link">Início</a></li>
+                <li><a href="#sobre-nos" class="nav-link">Sobre Nós</a></li>
+                <li><a href="/pages/helva.html" class="nav-link">Helva</a></li>
+            </ul>
         </nav>
     </header>
+    
     <main>
+        <!-- slides -->
         <section class="hero d-flex justify-content-center align-items-center" id="index">
-            <div class="container">
-                <div class="row">
-
-                    <!-- <div class="col-lg-8 col-12">
-                        <div class="heroText">
-                            <h1 class="text-white mb-lg-5 mb-4">IndieVillan: Nossa ideia. Seu jogo.</h1>
-                        </div>
-                    </div> -->
-
-                </div>
-            </div>
-            <!-- Isso é para o slide de imagens no topo do site -->
-            <div class="overlay d-flex justify-content-center align-items-center">
+            <div class="banner-container">
                 <div class="slides">
-                    <div class="slide first">
-                        <img src="_imagens/slide/helva.png">
+                    <div class="slide first banner">
+                        <img src="assets/indievillan_banner.png" alt="IndieVillan">
                     </div>
-                    <div class="slide">
-                        <img src="_imagens/slide/new-logo-centro.png">
+                    <div class="slide banner">
+                        <img src="assets/LogoHelva.jpg" alt="Helva">
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------------->
         </section>
-        <section class="about section-padding" id="sobre-nos">
-            <h2 class="ms-2">Sobre nós</h2>
-            <div class="d-flex flex-row">
-                <p class="ms-5 mt-3 me-5 text-justify">
+
+        <!-- sobre nos -->
+         <section class="titulo">
+             <h1 class="ms-2">Sobre nós</h1>
+         </section>
+        <section class="cards-container">
+            <div class="card card-img">
+                <p>
                     A IndieVillan nasceu da união de 6 amigos da faculdade, apaixonados por jogos e desenvolvimento. Decidimos transformar essa paixão em realidade e fundamos a empresa com um objetivo claro: criar jogos que divirtam e marquem a vida das pessoas. <br> <br>
                     Nosso primeiro grande desafio foi participar de um Game Dev Quest para conseguir o capital necessário para a IndieVillan. Chegamos perto, mas não conseguimos a vitória. Apesar do resultado, a experiência nos ensinou muito e serviu como um combustível para seguirmos em frente, ainda mais determinados a alcançar o sucesso. <br> <br>
                 
                     Somos um time que acredita na colaboração, na criatividade e na busca constante por inovação. Nosso objetivo é continuar evoluindo, aprendendo com cada projeto e entregando jogos de alta qualidade que proporcionem experiências únicas para nossos jogadores. <br> <br>
                 
-                    Acompanhe nossa jornada e descubra o que a IndieVillain está preparando para o futuro!</p>
-                    <img class="bi-layers rounded me-5" src="_imagens/indievillan_logo-fundo.png" width="500px">
+                    Acompanhe nossa jornada e descubra o que a IndieVillain está preparando para o futuro!
+                </p>
+            </div>
+            <div class="card card-img">
+                <img src="/assets/indievillan_logo.png">
             </div>
         </section>
 

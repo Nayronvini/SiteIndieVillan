@@ -169,7 +169,6 @@ a:hover {
 }
 
 
-
 /* Cabeçalho */
 .navbar { 
     position: fixed;
@@ -290,7 +289,30 @@ a:hover {
     height: 100%;
     object-fit: cover;
 }
-        
+
+/* Slides*/
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+
 /* Rodapé */
 .creditos h1 {
     font-size: 3rem;
